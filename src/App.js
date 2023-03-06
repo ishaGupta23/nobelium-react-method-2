@@ -1,23 +1,33 @@
 import logo from './logo.svg';
 import './App.css';
 
+// First component
+function HeadingOne() {
+  return <h1>I am heading one ... from first component</h1>;
+}
+
+// Second component
+function HeadingTwo() {
+  return <h2>I am heading two ... from second component</h2>;
+}
+
+// Third component
+function HeadingThree() {
+  return <h3>I am heading three ... from third component</h3>;
+}
+
+// Fourth component
+function Button() {
+  return <button>Click me!</button>;
+}
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <HeadingOne />
+      <HeadingTwo />
+      <HeadingThree />
+      <Button />
     </div>
   );
 }
